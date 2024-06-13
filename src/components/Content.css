@@ -1,0 +1,19 @@
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.content section {
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  color: rgb(66,126,151);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.workExperienceSection p,.educationalSection p{
+  margin: 0px;
+}

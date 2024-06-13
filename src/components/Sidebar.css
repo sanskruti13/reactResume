@@ -1,0 +1,41 @@
+.sidebarContainer {
+  width: 300px;
+  padding: 10px;
+  background-color: rgb(29, 41, 57);
+  border-right: 1px solid #ddd;
+  color: #fff;
+}
+
+.sidebarContainer h3{
+  color: rgb(66,126,151);
+}
+
+.profileImage {
+  width: 150px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.myProfileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 10px
+}
+
+.myProfileContainer p{
+  margin: 0px 10px;
+  color: rgb(66,126,151);
+}
+
+.languageSection p{
+  margin: 0px;
+  font-style: italic;
+  color: rgb(66,126,151);
+}
