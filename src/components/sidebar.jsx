@@ -1,5 +1,31 @@
 import React from 'react';
-import './Sidebar.css'; 
+import './Sidebar.css';
+
+const skills= [
+  { title: 'HTML', id: 1 },
+  { title: 'CSS', id: 2 },
+  { title: 'JavaScript', id: 3 },
+]
+
+const skillList = skills.map(skill =>
+  <li key={skill.id}>
+    {skill.title}
+  </li>
+);
+
+const languages= [
+  { title: 'English', id: 1, slug: 'Full Professional Proficiency' },
+  { title: 'Hindi', id: 2, slug: 'Full Professional Proficiency' },
+  { title: 'Marathi', id: 3, slug: 'Native or Bilingual Proficiency' },
+]
+
+const languageList = languages.map(language =>
+  <li key={language.id}>
+    {language.title}
+    <br/>
+    <em>{language.slug}</em>
+  </li>
+);
 
 const Sidebar = () => {
   return (
@@ -19,27 +45,12 @@ const Sidebar = () => {
       </div>
       <section className='skillSection'>
         <h3>SKILLS :</h3>
-      <div>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Sanity.io</li>
-          </ul>
-        </div>
+        <ul>{skillList}</ul>
+
       </section>
       <section className='languageSection'>
         <h3>LANGUAGES :</h3>
-      <div>
-          <ul>
-            <li>English</li>
-            <p>Full Professional Proficiency</p>
-            <li>Hindi</li>
-            <p>Full Professional Proficiency </p>
-            <li>Marathi</li>
-            <p>Native or Bilingual Proficiency</p>
-          </ul>
-        </div>
+        <ul>{languageList}</ul>
       </section>
    </div>
   );
